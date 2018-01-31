@@ -1,0 +1,27 @@
+{
+  "COMMON": {
+    "BUTTON": {
+      "SUBMIT": "送出",
+      "ADD": "新增",
+      "BACK": "返回"
+    },
+    "STR": {
+      "GREETING": "您好,"
+    },
+    "VALIDATION": {
+      "EMAIL_REQUIRED": "電子郵件不可為空白。",
+      "EMAIL_FORMAT_INCORRECT": "電子郵件格式不正確。",
+      "PWD_REQUIRED": "密碼不可為空白。"
+    }
+  },
+  "MENU": {
+    "HOME": "首頁",
+    "ADMIN": "管理員",
+    "LOGOUT": "登出"
+  },
+  "USER": {
+    "EMAIL": "電子郵件",
+    "PWD": "密碼"
+  }
+}
+

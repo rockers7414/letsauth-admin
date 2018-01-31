@@ -1,0 +1,15 @@
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th translate>{{ 'USER.EMAIL' }}</th>
+      <th translate>{{ 'USER.PWD' }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.email }}</td>
+      <td>{{ user.password }}</td>
+    </tr>
+  </tbody>
+</table>
+

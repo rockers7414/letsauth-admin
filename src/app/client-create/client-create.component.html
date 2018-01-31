@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name" translate>{{ 'CLIENT.NAME' }}</label>
+    <input id="name"
+           class="form-control"
+           type="text"
+           placeholder="{{ 'CLIENT.NAME' | translate }}"
+           formControlName="name">
+    <div *ngIf="!form.get('name').pristine" class="text-danger">
+      <small *ngIf="form.get('name').hasError('required')" translate>{{ 'COMMON.VALIDATION.NAME_REQUIRED' }}</small>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="redirectUri" translate>{{ 'CLIENT.REDIRECT_URI' }}</label>
+    <input id="redirectUri"
+            class="form-control"
+            type="text"
+            placeholder="{{ 'CLIENT.REDIRECT_URI' | translate }}"
+            formControlName="redirectUri">
+  </div>
+  <div class="form-group">
+    <label for="type" translate>{{ 'CLIENT.TYPE' }}</label>
+    <input id="type"
+            class="form-control"
+            type="text"
+            placeholder="{{ 'CLIENT.TYPE' | translate }}"
+            formControlName="type">
+  </div>
+  <button class="btn btn-primary" [disabled]="!this.form.valid" translate>{{ 'COMMON.BUTTON.SUBMIT' }}</button>
+</form>

@@ -1,0 +1,7 @@
+$navbar-height: 72px;
+
+div.container {
+  margin-top: -$navbar-height;
+  padding-top: $navbar-height;
+}
+

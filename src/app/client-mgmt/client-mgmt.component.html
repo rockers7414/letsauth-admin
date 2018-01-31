@@ -1,0 +1,21 @@
+<div *ngIf="view == 'client-list'">
+  <div class="py-2">
+    <button class="btn btn-outline-primary"
+            (click)="view = 'client-create'"
+            translate>
+      {{ 'COMMON.BUTTON.ADD' }}
+    </button>
+  </div>
+  <app-client-list [clients]="clients"></app-client-list>
+</div>
+
+<div *ngIf="view == 'client-create'">
+  <div class="py-2">
+    <button class="btn btn-outline-secondary"
+            (click)="view = 'client-list'"
+            translate>
+      {{ 'COMMON.BUTTON.BACK' }}
+    </button>
+  </div>
+  <app-client-create (clientCreated)="onClientCreated($event)"></app-client-create>
+</div>

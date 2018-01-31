@@ -1,0 +1,27 @@
+{
+  "COMMON": {
+    "BUTTON": {
+      "SUBMIT": "SUBMIT",
+      "ADD": "ADD",
+      "BACK": "BACK"
+    },
+    "STR": {
+      "GREETING": "Hi,"
+    },
+    "VALIDATION": {
+      "EMAIL_REQUIRED": "Email is required.",
+      "EMAIL_FORMAT_INCORRECT": "Email is incorrect.",
+      "PWD_REQUIRED": "Password is required."
+    }
+  },
+  "MENU": {
+    "HOME": "Home",
+    "ADMIN": "Admin",
+    "LOGOUT": "Logout"
+  },
+  "USER": {
+    "EMAIL": "Email address",
+    "PWD": "Password"
+  }
+}
+

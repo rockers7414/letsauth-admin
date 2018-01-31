@@ -1,0 +1,22 @@
+<div *ngIf="view == 'user-list'">
+  <div class="py-2">
+    <button class="btn btn-outline-primary"
+            (click)="view = 'user-create'"
+            translate>
+      {{ 'COMMON.BUTTON.ADD' }}
+    </button>
+  </div>
+  <app-user-list [users]="users"></app-user-list>
+</div>
+
+<div *ngIf="view == 'user-create'">
+  <div class="py-2">
+    <button class="btn btn-outline-secondary"
+            (click)="view = 'user-list'"
+            translate>
+      {{ 'COMMON.BUTTON.BACK' }}
+    </button>
+  </div>
+  <app-user-create (userCreated)="onUserCreated($event)"></app-user-create>
+</div>
+

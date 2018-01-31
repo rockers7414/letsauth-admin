@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center h-100">
+  <div class="d-flex align-items-center">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email" translate>{{ 'USER.EMAIL' }}</label>
+        <input id="email"
+               class="form-control"
+               type="email"
+               placeholder="{{ 'USER.EMAIL' | translate }}"
+               formControlName="email">
+        <div *ngIf="!form.get('email').pristine" class="text-danger">
+          <small *ngIf="form.get('email').hasError('required')" translate>{{ 'COMMON.VALIDATION.EMAIL_REQUIRED' }}</small>
+          <small *ngIf="form.get('email').hasError('pattern')" translate>{{ 'COMMON.VALIDATION.EMAIL_FORMAT_INCORRECT' }}</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" translate>{{ 'USER.PWD' }}</label>
+        <input id="password"
+                class="form-control"
+                type="password"
+                placeholder="{{ 'USER.PWD' | translate }}"
+                formControlName="password">
+        <div *ngIf="!form.get('password').pristine" class="text-danger">
+          <small *ngIf="form.get('password').hasError('required')" translate>{{ 'COMMON.VALIDATION.PWD_REQUIRED' }}</small>
+        </div>
+      </div>
+      <button class="btn btn-primary" [disabled]="!this.form.valid" translate>{{ 'COMMON.BUTTON.SUBMIT' }}</button>
+    </form>
+  </div>
+</div>
+

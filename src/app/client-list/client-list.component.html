@@ -1,0 +1,20 @@
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th translate>{{ 'CLIENT.NAME' }}</th>
+      <th translate>{{ 'CLIENT.ID' }}</th>
+      <th translate>{{ 'CLIENT.SECRET' }}</th>
+      <th translate>{{ 'CLIENT.REDIRECT_URI' }}</th>
+      <th translate>{{ 'CLIENT.TYPE' }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let client of clients">
+      <td>{{ client.name }}</td>
+      <td>{{ client._id }}</td>
+      <td>{{ client.secret }}</td>
+      <td>{{ client.redirectUri }}</td>
+      <td>{{ client.type }}</td>
+    </tr>
+  </tbody>
+</table>
