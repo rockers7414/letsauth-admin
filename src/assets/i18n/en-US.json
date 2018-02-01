@@ -17,11 +17,20 @@
   "MENU": {
     "HOME": "Home",
     "ADMIN": "Admin",
-    "LOGOUT": "Logout"
+    "LOGOUT": "Logout",
+    "USER": "User Management",
+    "CLIENT": "Client Management"
   },
   "USER": {
     "EMAIL": "Email address",
     "PWD": "Password"
+  },
+  "CLIENT": {
+    "NAME": "Name",
+    "ID": "ID",
+    "SECRET": "Secret",
+    "REDIRECT_URI": "Redirect URI",
+    "TYPE": "Type"
   }
 }
 

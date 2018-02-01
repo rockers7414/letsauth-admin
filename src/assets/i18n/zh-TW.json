@@ -17,11 +17,20 @@
   "MENU": {
     "HOME": "首頁",
     "ADMIN": "管理員",
-    "LOGOUT": "登出"
+    "LOGOUT": "登出",
+    "USER": "使用者管理",
+    "CLIENT": "第三方應用程式管理"
   },
   "USER": {
     "EMAIL": "電子郵件",
     "PWD": "密碼"
+  },
+  "CLIENT": {
+    "NAME": "名稱",
+    "ID": "ID",
+    "SECRET": "Secret",
+    "REDIRECT_URI": "Redirect URI",
+    "TYPE": "類別"
   }
 }
 
